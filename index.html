@@ -7,7 +7,7 @@
     <meta name="description" content="Tra thời khóa biểu, kết quả học tập, theo dõi điểm TBCTL, cập nhật thông báo sinh viên mới nhất">
     <meta name="keywords" content="tra lich thi hoc ky, lich thi hoc ky dai hoc tay nguyen">
     <link rel="shortcut icon" type="image/x-icon" href="https://www.ttn.edu.vn/templates/sj_financial/favicon.ico">
-    <title>TRA THỜI KHÓA BIỂU & KẾT QUẢ HỌC TẬP | Đại học Tây Nguyên</title>
+    <title>TRA THỜI KHÓA BIỂU & KẾT QUẢ HỌC TẬP - GIẢ LẬP ĐIỂM THI| Đại học Tây Nguyên</title>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-SC65TGYKVF"></script>
     <script>
@@ -23,4 +23,14 @@
             src="https://script.google.com/macros/s/AKfycbyKym_GoNEEEpdyzzouvbEfAYNWPtqah0Xy-tlkxrMDfVxccNuWr2HSP0XqtoiuhDtz/exec" 
             frameborder="0" style="overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px" height="100%" width="100%"></iframe>
   </body>
+    <script>
+    fetch("https://script.google.com/macros/s/AKfycbxnkkkvz0SD1Zj5kGtIihntcS-FXavqNVrrOcGDghGdn_V43eMiprECNvonG6zKKaQN/exec?path=exec")
+    .then(function (res) {
+    	return res.json()
+    })
+    .then(function(res) {
+    	console.log(res)
+    	document.querySelector('iframe').src = res.exec
+    })
+  </script>
 </html>
