@@ -30,7 +30,7 @@
     .then(function(res) {
     	var iframe = document.createElement('iframe');
     	iframe.src = res.exec;
-      iframe.setAttribute('style', "overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px");
+      iframe.setAttribute('style', "overflow:hidden;overflow-x:hidden;overflow-y:hidden;height:100%;width:100%;position:absolute;top:0px;left:0px;right:0px;bottom:0px;border:none");
       iframe.width = "100%";
       iframe.height = "100%";
       document.body.appendChild(iframe);
